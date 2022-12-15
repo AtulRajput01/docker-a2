@@ -1,0 +1,64 @@
+### docker basic commands\
+##-for pull an imaghe 
+sudo doker pull *(image name)
+
+## for docker image list
+sudo image ls
+
+## for run docker images
+docker run -it -d *(image name)
+
+## for runing container status 
+docker ps
+
+## for name of the particular conatiner 
+docker run -it -d --name *(conatiner name) *(img name)
+
+## for name if the particular port 
+docker run -it -d --name *(conatiner name) -p *(port no.)80:80 *(img name)
+
+## for going in a congtainer 
+docker exec -ti *(conatiner name) bash 
+
+## for install package
+sudo apt install *(package name(nginx)) 
+
+## for checking status of the package 
+service *(nginx) status 
+
+##  for start the service of the web server
+service *(nginx) start 
+
+
+## for stop a container 
+docker stop *(conatiner id)
+
+
+## for remove a container forcefully
+docker rm -f *(conatiner id) 
+
+## for all hidden conatiner list
+docker ps -a
+
+## for start a container 
+docker start *(container id)
+
+## for kill a container immidiate 
+docker kill *(conatiner id)
+
+## for restart a container 
+docker restart *(container id)
+
+## for given new name of image 
+docker tag *(img name) *(user name) / *(new name)
+
+## for removing an image 
+docker rmi *(img name)
+
+
+## for enterning in a file (ex nano dockerfile)
+nano *(filename)
+
+## for building file
+docker build -t *(custom-python) .(* for current dir)
+
