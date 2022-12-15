@@ -1,0 +1,42 @@
+### Log into the system and open a terminal with sudo or root
+ sudo -i
+ 
+### Add an entry for backports on Debian Wheezy:
+
+ deb http://http.debian.net/debian wheezy-backports main
+ 
+ ### Update your packages:
+ 
+ sudo apt-get update -y
+  
+ ### Install Docker
+  
+ ### If you use Ubuntu Trusty, Wily, or Xenial, install the linux-image-extra kernel package:
+
+sudo apt-get update -y && sudo apt-get install -y linux-image-extra-$(uname -r)
+
+## Install Docker:
+
+sudo apt-get install docker-engine -y
+
+### Start Docker:
+
+ sudo service docker start
+ 
+ ### Verify Docker:
+ 
+ sudo docker run hello-world
+ 
+ ## verify it
+ docker --version
+ 
+  
+  
+  
+ 
+
+
+
+
+
+ 
