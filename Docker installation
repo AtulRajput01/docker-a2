@@ -27,7 +27,7 @@ sudo apt-get install docker-engine -y
  
  sudo docker run hello-world
  
- ## verify it
+ ## verify the verion 
  docker --version
  
   
