@@ -1,5 +1,5 @@
 ### docker basic commands\
-##-for pull an imaghe 
+## for pull an imaghe 
 sudo doker pull *(image name)
 
 ## for docker image list
