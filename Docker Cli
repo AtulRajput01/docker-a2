@@ -59,6 +59,6 @@ docker rmi *(img name)
 ## for enterning in a file (ex nano dockerfile)
 nano *(filename)
 
-## for building file
+## for building docker  file
 docker build -t *(custom-python) .(* for current dir)
 
