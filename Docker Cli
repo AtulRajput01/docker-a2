@@ -81,4 +81,9 @@ git push origin master
 ## given a tag to the docker image
 sudo docker tag *(nginx-alpine-image) *(docker user name first/and img name) amazingatul/nginx-alpine-image
 
+## push docker image
+
+sudo docker push amazingatul/nginx-alpine-image
+
+
 
