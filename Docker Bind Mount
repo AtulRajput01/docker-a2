@@ -1,0 +1,22 @@
+## for creating read only volume
+sudo docker volume create ironmanRO
+
+sudo docker run -it -d --name conC --mount source=ironmanRO,target=/apps,readonly ubuntu
+
+sudo docker ps
+sudo docker conatiner inspect conC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
