@@ -33,6 +33,8 @@ service *(nginx) start
 ## for stop a container 
 docker stop *(conatiner id)
 
+## initiliaze github
+git init
 
 ## for remove a container forcefully
 docker rm -f *(conatiner id) 
