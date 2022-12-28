@@ -67,6 +67,11 @@ docker build -t *(custom-python) .(* for current dir)
 ## for given a tag o the container
 sudo docker run -it -d --name *(alpine-image) *(img name)
 
+git add .
+
+## commit file
+git commit -m "Added dockerfile"
+
 
 
 
