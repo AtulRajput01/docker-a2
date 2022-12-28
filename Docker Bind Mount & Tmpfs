@@ -1,0 +1,73 @@
+Bind mount's aren't managed by docker and are mapped to a host system directory
+
+## for creating a bind type of storage bind only refrence the storage it not managed by the docker file 
+"cd ..
+mkdir fun
+cd fun
+sudo docker run -it -d --name conA --mount type=bind,source=$ (pwd),target=apps ubutnu"
+
+
+sudo docker conatiner inspect conA
+
+sudo docker exec conA bash
+ls
+nano hello.txt
+nano fun.txt
+
+cd apps/
+ls
+cat fun.txt
+cd fun
+
+sudo docker run -it -d --name conB --mount type=bind,source=$ (pwd)/fun,target=/apps,readonly ubuntu
+sudo docker ps
+sudo docker conatiner inspect conB
+ 
+ 
+@@ $$$$   Tmpfs Mount
+
+This type of storage maps to host system's(linux) memory.
+Tmpfs is not a persistant like volumes and tmpfs and get remived when the container they are attached to are stopped.
+They only ever get mapped to a single container in their lifetime.Allows you store more temporary data without affecting a conatiner's efficiency
+basically it is use when we did not wqant effect conatiner performance or efficency
+
+
+sudo docker run -it -d --name tempcon --mount type=tmpfs,target=/apps ubuntu
+sudo docker ps
+sudo docker conatiner inspect tempcon
+
+sudo docker run -it -d --name temp1 --tmpfs /apps ubuntu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
