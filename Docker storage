@@ -1,0 +1,8 @@
+Normally if you wanted to store data in a Docker container it would be stored in the writable layer of the docker conatiner, 
+but this is not a efficient way to store sata. so we make use of diffrent docker storage types.
+These storage types have a lot of advantage over the default storage method.
+
+basically there are 3 types of storage date in docker 
+.Volumes
+.Bind Mount
+Tmpfs mount
