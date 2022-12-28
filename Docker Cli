@@ -72,6 +72,11 @@ git add .
 ## commit file
 git commit -m "Added dockerfile"
 
+git config --global user.eamil="atulrajput9690@gmail.com"
+
+git remote add origin *(git repo  clone)https://github.com/AtulRajput01/docker-a2.git
+
+git push origin master
 
 
 
