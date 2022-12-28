@@ -25,6 +25,36 @@ sudo docker container inspect conA
 ## using docker storage conatiner with the help of volume flag
 sudo docker run -it -d --name conB -volume *spider:/apps ubuntu
 
+## crete docker volume
+ sudo docker volume create *<name>(ironman)
+ 
+## for showing ls of volume in system
+sudo docker volume ls
+
+## for checking an volume
+sudo docker volume inspect *(volume name)iron man
+
+## for remove volume
+sudo docker volume rm *(volume name)
+
+## for remove all volume
+sudo docker volume prune
+
+## using docker  storage conatiner with the help of mount flag
+sudo docker rin -it -d --name *conA source=*ironman,target=/apps *ubuntu
+ 
+## checking conatiner 
+sudo docker ps
+
+for checking a container inspect
+sudo docker container inspect conA
+
+## using docker storage conatiner with the help of volume flag
+sudo docker run -it -d --name conB -volume *spider:/apps ubuntu
+
+
+
+
 
 
 
