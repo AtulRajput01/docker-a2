@@ -14,7 +14,7 @@ sudo docker volume rm *(volume name)
 sudo docker volume prune
 
 ## using docker  storage conatiner with the help of mount flag
-sudo docker rin -it -d --name *conA source=*ironman,target=/apps *ubuntu
+sudo docker run -it -d --name *conA source=*ironman,target=/apps *ubuntu
  
 ## checking conatiner 
 sudo docker ps
