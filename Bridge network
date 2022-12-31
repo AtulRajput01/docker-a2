@@ -1,2 +1,41 @@
 ## for creating driver 
 sudo docker network create --driver <d.name> <network.name>
+sudo docker network ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
