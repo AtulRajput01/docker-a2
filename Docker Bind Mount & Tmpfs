@@ -7,7 +7,7 @@ cd fun
 sudo docker run -it -d --name conA --mount type=bind,source=$ (pwd),target=apps ubutnu"
 
 
-sudo docker conatiner inspect conA
+sudo docker container inspect conA
 
 sudo docker exec conA bash
 ls
@@ -21,7 +21,7 @@ cd fun
 
 sudo docker run -it -d --name conB --mount type=bind,source=$ (pwd)/fun,target=/apps,readonly ubuntu
 sudo docker ps
-sudo docker conatiner inspect conB
+sudo docker container inspect conB
  
  
 @@ $$$$   Tmpfs Mount
@@ -34,7 +34,7 @@ basically it is use when we did not wqant effect conatiner performance or effice
 
 sudo docker run -it -d --name tempcon --mount type=tmpfs,target=/apps ubuntu
 sudo docker ps
-sudo docker conatiner inspect tempcon
+sudo docker container inspect tempcon
 
 sudo docker run -it -d --name temp1 --tmpfs /apps ubuntu
 
