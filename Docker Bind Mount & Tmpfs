@@ -38,7 +38,7 @@ sudo docker container inspect tempcon
 
 sudo docker run -it -d --name temp1 --tmpfs /apps ubuntu
 
-
+sudo docker ps -a
 
 
 
