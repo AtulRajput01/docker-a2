@@ -13,10 +13,10 @@ sudo docker volume rm *(volume name)
 ## for remove all volume
 sudo docker volume prune
 
-## using docker  storage conatiner with the help of mount flag
+## using docker  storage container with the help of mount flag
 sudo docker run -it -d --name *conA --mount source=*ironman,target=/apps *ubuntu
  
-## checking conatiner 
+## checking container 
 sudo docker ps
 
 for checking a container inspect
