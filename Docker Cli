@@ -85,5 +85,5 @@ sudo docker tag *(nginx-alpine-image) *(docker user name first/and img name) ama
 
 sudo docker push amazingatul/nginx-alpine-image
 
-sudo docker ps
+sudo docker ps -a
 
