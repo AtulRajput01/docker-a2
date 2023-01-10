@@ -69,6 +69,7 @@ you should see your Todo application, the same as when we ran it as a stand-alon
 -> Once satisfied, tear down your application:
 
 docker stack rm demo
+sudo docker ps -a
 
 ### Conclusion
 
