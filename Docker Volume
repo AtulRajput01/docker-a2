@@ -52,7 +52,7 @@ sudo docker container inspect conA
 ## using docker storage conatiner with the help of volume flag
 sudo docker run -it -d --name conB -volume *spider:/apps ubuntu
 
-
+sudo docker container inspect *con name
 
 
 
