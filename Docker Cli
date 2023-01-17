@@ -76,7 +76,7 @@ git config --global user.eamil="atulrajput9690@gmail.com"
 
 git remote add origin *(git repo  clone)https://github.com/AtulRajput01/docker-a2.git
 
-git push origin master
+git push origin maste
 
 ## given a tag to the docker image
 sudo docker tag *(nginx-alpine-image) *(docker user name first/and img name) amazingatul/nginx-alpine-image
