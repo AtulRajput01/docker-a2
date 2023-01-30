@@ -6,3 +6,4 @@ basically there are 3 types of storage date in docker
 .Volumes
 .Bind Mount
 Tmpfs mount
+sudo docker ps
