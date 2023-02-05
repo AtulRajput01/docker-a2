@@ -5,7 +5,9 @@ For Now let's just understand that Docker Compose is just a serivce within Docke
 ""  sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose  ""
 
 
+~~ give some execution rights to the docker compose 
 
+""sudo chmod +X /usr/local/bin/docker-compose""
 
 
 
