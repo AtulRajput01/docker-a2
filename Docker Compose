@@ -37,7 +37,9 @@ services:
 sudo docker-compose up
 
 
+~~for close the all docker-compose services
 
+""sudo docker-compose down""
 
 
 
