@@ -9,6 +9,11 @@ For Now let's just understand that Docker Compose is just a serivce within Docke
 
 ""sudo chmod +x /usr/local/bin/docker-compose;""
 
+~~ build a docker image 
+""sudo docker build -t ubuntu1""
+
+
+
 
 
 
