@@ -34,4 +34,6 @@ def hello():
 
  flask
  redis
+ 
+ Step 2: Create a Dockerfile🔗
 
