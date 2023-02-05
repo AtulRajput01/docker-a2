@@ -4,3 +4,5 @@ Step 1: Define the application dependencies
    mkdir composetest
    cd composetest
 
+ 2.Create a file called app.py in your project directory and paste the following code in:
+ 
