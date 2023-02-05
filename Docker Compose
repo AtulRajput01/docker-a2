@@ -12,6 +12,9 @@ For Now let's just understand that Docker Compose is just a serivce within Docke
 ~~ build a docker image 
 ""sudo docker build -t ubuntu1""
 
+~~build a yaml file
+
+"nano docker-compose.yml"
 
 
 
