@@ -108,3 +108,12 @@ redis_1  | 1:M 17 Aug 22:11:10.483 # Server initialized
 redis_1  | 1:M 17 Aug 22:11:10.483 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
 web_1    |  * Debugger PIN: 330-787-903
 redis_1  | 1:M 17 Aug 22:11:10.483 * Ready to accept connections
+
+
+Compose pulls a Redis image, builds an image for your code, and starts the services you defined. In this case, the code is statically copied into the image at build time.
+
+Enter http://localhost:8000/ in a browser to see the application running.
+
+If this doesn’t resolve, you can also try http://127.0.0.1:8000.
+
+You should see a message in your browser saying:
