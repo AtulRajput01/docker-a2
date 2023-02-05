@@ -29,3 +29,7 @@ def get_hit_count():
 def hello():
     count = get_hit_count()
     return 'Hello World! I have been seen {} times.\n'.format(count)
+
+3.Create another file called requirements.txt in your project directory and paste the following code in:
+
+
