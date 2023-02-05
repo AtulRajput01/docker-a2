@@ -7,7 +7,7 @@ For Now let's just understand that Docker Compose is just a serivce within Docke
 
 ~~ give some execution rights to the docker compose 
 
-""sudo chmod +X /usr/local/bin/docker-compose""
+""sudo chmod +x /usr/local/bin/docker-compose;""
 
 
 
