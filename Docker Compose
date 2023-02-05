@@ -37,3 +37,8 @@ def hello():
  
  Step 2: Create a Dockerfile🔗
 
+  The Dockerfile is used to build a Docker image. The image contains all the dependencies the Python application requires, including Python itself.
+
+   In your project directory, create a file named Dockerfile and paste the following code in:
+
+
