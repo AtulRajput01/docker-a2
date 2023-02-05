@@ -32,4 +32,6 @@ def hello():
 
 3.Create another file called requirements.txt in your project directory and paste the following code in:
 
+ flask
+ redis
 
