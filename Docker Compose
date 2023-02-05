@@ -16,6 +16,22 @@ For Now let's just understand that Docker Compose is just a serivce within Docke
 
 "nano docker-compose.yml"
 
+""
+version:'3'
+networks:
+ batman:
+   driver: bridge
+
+services:
+  os:
+    image: "ubuntu1"
+    ports:
+      - "80:80"
+
+    networks:
+      - batman
+""
+
 
 
 
