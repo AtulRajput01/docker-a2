@@ -324,4 +324,4 @@ See docker compose --help to see other available commands.
 
 If you started Compose with docker compose up -d, stop your services once you’ve finished with them:
 
-docker compose stop
+""docker compose stop""
