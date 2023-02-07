@@ -32,7 +32,7 @@ services:
       - batman
 ""
 
-~~next step
+~~next step for open and stand the docker file
 
 sudo docker-compose up
 
