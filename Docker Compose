@@ -41,6 +41,8 @@ sudo docker-compose up
 
 ""sudo docker-compose down""
 
+~~ for hosting in local server
+
 
 
 
