@@ -43,7 +43,7 @@ sudo docker-compose up
 
 ~~ for hosting in local server
 
-
+""curl localhost:*5000
 
 
 
