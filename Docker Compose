@@ -65,7 +65,22 @@ service:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wprdpress
       MYSQL_PASSWORD: wordpress
+wordpress:
+    depends_on:
+      -  db
+    image: wordpress:latest
+    ports:
+      -  "8000:80"
+    restart: always
+    enviroment:
+      WORDPRESS_DB_HOST:  db:3306
+      WORDPRESS_DB_USER:  wordpress
+      WORDPRESS_DB_PASSWORD:  wordpress
+      WORDPRESS_DB_NAME:  wordpress
 
+  volume:
+    db_data: {}
+      
 
 
 
