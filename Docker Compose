@@ -32,18 +32,21 @@ services:
       - batman
 ""
 
+~~ for hosting in local server
+
+""curl localhost:*5000
+
 ~~next step for open and stand the docker file
 
 sudo docker-compose up
+
 
 
 ~~for close the all docker-compose services
 
 ""sudo docker-compose down""
 
-~~ for hosting in local server
 
-""curl localhost:*5000
 
 
 
