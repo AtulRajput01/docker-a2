@@ -46,7 +46,9 @@ sudo docker-compose up
 ""sudo docker-compose down""
 
 ~~ functioning website
+mkdir wordpress
 
+cd wordpress/
 
 
 
