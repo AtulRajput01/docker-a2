@@ -50,7 +50,21 @@ mkdir wordpress
 
 cd wordpress/
 
+~~making a yml file
 
+version: '3.3'
+
+service:
+  db:
+    image: mysql:5.7
+    volume: 
+      -  db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wprdpress
+      MYSQL_PASSWORD: wordpress
 
 
 
