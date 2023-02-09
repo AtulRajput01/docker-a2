@@ -54,33 +54,32 @@ cd wordpress/
 
 version: '3.3'
 
-service:
+services:
   db:
     image: mysql:5.7
-    volume: 
-      -  db_data:/var/lib/mysql
+    volume:
+      - db_data:/var/lib/mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_ROOT_PASSWORD: admin5463
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wprdpress
       MYSQL_PASSWORD: wordpress
-wordpress:
+  wordpress:
     depends_on:
-      -  db
+      - db
     image: wordpress:latest
     ports:
-      -  "8000:80"
+      - "8000:80"
     restart: always
-    enviroment:
-      WORDPRESS_DB_HOST:  db:3306
-      WORDPRESS_DB_USER:  wordpress
-      WORDPRESS_DB_PASSWORD:  wordpress
-      WORDPRESS_DB_NAME:  wordpress
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+volume:
+  db_data: {}
 
-  volume:
-    db_data: {}
-      
 
 
 
