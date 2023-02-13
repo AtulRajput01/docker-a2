@@ -5,7 +5,7 @@
 .Make sure that Swarm is enabled on your Docker Desktop by typing docker system info, and looking for a message Swarm: active (you might have to scroll up a little).
   
   If Swarm isn’t running, simply type docker swarm init in a shell prompt to set it up.
-
+ sudo docker network inspect
 ### Introduction
 Now that we’ve demonstrated that the individual components of our application run as stand-alone containers and shown how to deploy it using Kubernetes, let’s look at how to arrange for them to be managed by Docker Swarm.
 Swarm provides many tools for scaling, networking, securing and maintaining your containerized applications, above and beyond the abilities of containers themselves.
