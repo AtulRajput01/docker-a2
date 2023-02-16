@@ -81,6 +81,53 @@ This simple text file contains everything we need to create our application in a
 
 
 
+   sudo docker --version
+~~for intializing the manager token
+   sudo docker swarm init
+~~ this is the token
+ sudo docker swarm join --token SWMTKN-1-26537ol47nsoi7ubqtvqylhkhfvvs6dox33jnmddj57nuhcrrz-ecze17g5949tkl7irs5x5fhzc 192.168.137.164:2377
+~~ showing node list
+ sudo docker node ls
+
+~~ showing full docker and system information 
+ sudo docker info
+ 
+~~for leaving the node
+sudo docker swarm leave
+~~ joining the doker swarm node as a worker 
+sudo docker swarm join-token worker
+ sudo docker node ls
+~~ for joining the docker node as a manger
+ sudo docker swarm join-token manager
+~~ for creating a muliple replicas on docker swarm
+   sudo docker service create --name fun --replicas 3
+~~ set the port number for replicas
+  sudo docker service create --name *(node)fun --replicas 3 -p 80:80 httpd
+~~ checking the docker swarm services list
+   sudo docker swarm service ls
+   sudo docker service ls
+~~inspect the node
+   sudo docker service fun
+~~ node status 
+  sudo docker ps fun
+  sudo docker service ps fun
+~~ inspect the node
+  sudo docker service inspect fun
+ ~~making a docker compose file
+  nano docker-compose.yml 
+ sudo docker stack deploy -c docker-compose.yml fun
+ 2549  sudo docker service ls
+ 2550  sudo docker service ps fun_wordpress
+ 2551  sudo docker service scale fun_wordpress=3
+ 2552  ocker service ps fun_wordpress
+ 2553  docker service ps fun_wordpress
+ 2554  sudo docker stack services fun
+ 2555  sudo docker ps
+ 2556  sudoc docker node update --availability
+ 2557  sudo docker node update --availability drain wmlsp8xdgecr
+ 2558  sudo docker node ps
+ 2559  sudo docker node update --availability drain wjijge2cgnik
+ 2560  sudo docker node update --availabilit
 
 
 
