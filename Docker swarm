@@ -126,8 +126,8 @@ sudo docker swarm join-token worker
  2556  sudoc docker node update --availability
  2557  sudo docker node update --availability drain wmlsp8xdgecr
  2558  sudo docker node ps
- 2559  sudo docker node update --availability drain wjijge2cgnik
- 2560  sudo docker node update --availabilit
+   sudo docker node update --availability drain wjijge2cgnik
+  sudo docker node update --availability
 
 
 
