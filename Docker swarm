@@ -116,9 +116,9 @@ sudo docker swarm join-token worker
  ~~making a docker compose file
   nano docker-compose.yml 
  sudo docker stack deploy -c docker-compose.yml fun
- 2549  sudo docker service ls
- 2550  sudo docker service ps fun_wordpress
- 2551  sudo docker service scale fun_wordpress=3
+   sudo docker service ls
+   sudo docker service ps fun_wordpress
+   sudo docker service scale fun_wordpress=3
   docker service ps fun_wordpress
    docker service ps fun_wordpress
   sudo docker stack services fun
