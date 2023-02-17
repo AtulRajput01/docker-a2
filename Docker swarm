@@ -119,8 +119,8 @@ sudo docker swarm join-token worker
  2549  sudo docker service ls
  2550  sudo docker service ps fun_wordpress
  2551  sudo docker service scale fun_wordpress=3
- 2552  ocker service ps fun_wordpress
- 2553  docker service ps fun_wordpress
+  docker service ps fun_wordpress
+   docker service ps fun_wordpress
   sudo docker stack services fun
    sudo docker ps
    sudoc docker node update --availability
