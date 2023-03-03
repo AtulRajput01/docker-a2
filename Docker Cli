@@ -3,7 +3,7 @@
 sudo docker pull *(image name)
 
 ## for docker image list
-sudo image ls
+sudo docker image ls
 
 ## for run docker images
 docker run -it -d *(image name)
