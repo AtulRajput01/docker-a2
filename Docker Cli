@@ -86,3 +86,8 @@ sudo docker tag *(nginx-alpine-image) *(docker user name first/and img name) ama
 sudo docker push *(docker hub user name)/*(image name)
 
 sudo docker ps ls -a
+
+## This will remove all unused build cache data and force a fresh build of the Docker image.
+
+~~ docker builder prune --all --force
+
